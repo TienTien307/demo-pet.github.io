@@ -35,7 +35,7 @@
             <ul>
                 <li class="socials"><a title="Facebook" href="#"><i class="fab fa-facebook-f"></i></a><a title="Instagram" href="#"><i class="fab fa-instagram"></i></a><a title="Twitter" href=""><i class="fab fa-twitter"></i></a></li>
                 <li>
-                    <a href="" class="logo"><img src="./image/logo.png" alt=""></a>
+                    <a href="" class="logo"><img src="./image/logo-removebg.png" alt=""></a>
                 </li>
                 <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
@@ -48,7 +48,7 @@
             <ul>
                 <li><a class="color-menu" href="#">Trang chủ</a></li>
                 <li class="menu-cha"><a class="color-menu" href="#">Dịch vụ</a>
-                    <ul class="menu-con">
+                    <ul class="menu-con" id="menu-con">
                         <li>
                             <a href="#" class="color-menu">Cắt tỉa lông chó mèo </a>
                         </li>
@@ -61,7 +61,7 @@
                     </ul>
                 </li>
                 <li class="menu-cha"><a class="color-menu" href="#">Sản phẩm</a>
-                    <ul class="menu-con">
+                    <ul class="menu-con" id="menu-con2">
                         <li>
                             <a href="#" class="color-menu">Sản phẩm cho chó</a>
                         </li>
@@ -121,7 +121,7 @@
 
     <!-- content -->
     <div class="grid">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-6 h-50">
                 <img src="./image/takecare.jpg" alt="">
             </div>
@@ -161,6 +161,75 @@
             <div class="col-md-6 h-50">
                 <img src="./image/sale.jpg" alt="">
             </div>
+        </div> -->
+        <h3 class="content">Danh mục</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="select-item">
+                    <img src="./image/takecare.jpg" alt="">
+                    <div class="item-info">
+                        <a href="">
+                            <h3>Chăm sóc thú cưng</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="select-item">
+                    <img src="./image/thucanchocho.jpg" alt="">
+                    <div class="item-info">
+                        <a href="">
+                            <h3>Thức ăn cho chó</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="select-item">
+                    <img src="./image/thucanchomeo.jpg" alt="">
+                    <div class="item-info">
+                        <a href="">
+                            <h3>Thức ăn cho mèo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="select-item">
+                    <img src="./image/phukienchomeo.jpg" alt="">
+                    <div class="item-info">
+                        <a href="">
+                            <h3>Phụ kiện chó mèo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="select-item">
+                    <img src="./image/chomeotisen.jfif" alt="">
+                    <div class="item-info">
+                        <a href="">
+                            <h3>Chó mèo tìm sen</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="select-item">
+                    <img src="./image/uudai.jfif" alt="">
+                    <div class="item-info">
+                        <a href="">
+                            <h3>Ưu đãi</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -183,13 +252,18 @@
         };
         var header = document.getElementById("myHeader");
         var sticky = header.offsetTop;
-        var colorMenu = document.getElementById("color-menu");
+        var colorMenuCon = document.getElementById("menu-con");
+        var colorMenuCon2 = document.getElementById("menu-con2");
 
         function myFunction() {
             if (window.pageYOffset > sticky) {
                 header.classList.add("sticky");
+                colorMenuCon.classList.add("bgBlack");
+                colorMenuCon2.classList.add("bgBlack");
             } else {
                 header.classList.remove("sticky");
+                colorMenuCon.classList.remove("bgBlack");
+                colorMenuCon2.classList.remove("bgBlack");
             }
         }
     </script>
