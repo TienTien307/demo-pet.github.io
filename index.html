@@ -33,7 +33,7 @@
         </div>
         <div class="header-logo">
             <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li class="socials"><a title="Facebook" href="#"><i class="fab fa-facebook-f"></i></a><a title="Instagram" href="#"><i class="fab fa-instagram"></i></a><a title="Twitter" href=""><i class="fab fa-twitter"></i></a></li>
                 <li>
                     <a href="" class="logo"><img src="./image/logo.png" alt=""></a>
                 </li>
@@ -41,37 +41,39 @@
             </ul>
         </div>
     </div>
-    <div class="header-menu">
+
+    <!-- menu -->
+    <div class="header-menu" id="myHeader">
         <div class="grid">
             <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li class="menu-cha"><a href="#">Dịch vụ</a>
+                <li><a class="color-menu" href="#">Trang chủ</a></li>
+                <li class="menu-cha"><a class="color-menu" href="#">Dịch vụ</a>
                     <ul class="menu-con">
                         <li>
-                            <a href="#">Cắt tỉa lông chó mèo </a>
+                            <a href="#" class="color-menu">Cắt tỉa lông chó mèo </a>
                         </li>
                         <li>
-                            <a href="#">Tắm spa chó mèo</a>
+                            <a href="#" class="color-menu">Tắm spa chó mèo</a>
                         </li>
                         <li>
-                            <a href="#">Chó mèo tìm sen</a>
+                            <a href="#" class="color-menu">Chó mèo tìm sen</a>
                         </li>
                     </ul>
                 </li>
-                <li class="menu-cha"><a href="#">Sản phẩm</a>
+                <li class="menu-cha"><a class="color-menu" href="#">Sản phẩm</a>
                     <ul class="menu-con">
                         <li>
-                            <a href="#">Sản phẩm cho chó</a>
+                            <a href="#" class="color-menu">Sản phẩm cho chó</a>
                         </li>
                         <li>
-                            <a href="#">Sản phẩm cho mèo</a>
+                            <a href="#" class="color-menu">Sản phẩm cho mèo</a>
                         </li>
                     </ul>
                 </li>
-                <li><a href="#">Tạp chí thú cưng</a></li>
-                <li><a href="#">Khuyến mãi</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#" class="color-menu">Tạp chí thú cưng</a></li>
+                <li><a href="#" class="color-menu">Khuyến mãi</a></li>
+                <li><a href="#" class="color-menu">Giới thiệu</a></li>
+                <li><a href="#" class="color-menu"><i class="fas fa-search"></i></a></li>
             </ul>
 
         </div>
@@ -117,6 +119,52 @@
         </div>
     </div>
 
+    <!-- content -->
+    <div class="grid">
+        <div class="row">
+            <div class="col-md-6 h-50">
+                <img src="./image/takecare.jpg" alt="">
+            </div>
+            <div class="col-md-6 h-50">
+                <h2>CHĂM SÓC THÚ CƯNG</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, possimus.</p>
+                <a href="#" class="button-now">Xem Ngay</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 h-50">
+                <h2>SẢN PHẨM CHÓ MÈO</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, possimus.</p>
+                <a href="#" class="button-now">Sản phẩm cho chó</a>
+                <a href="#" class="button-now">Sản phẩm cho mèo</a>
+            </div>
+            <div class="col-md-6 h-50">
+                <img src="./image/spcho-meo.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 h-50">
+                <img src="./image/tapchithucung.jpg" alt="">
+            </div>
+            <div class="col-md-6 h-50">
+                <h2>TẠP CHÍ THÚ CƯNG</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, possimus.</p>
+                <a href="#" class="button-now">Xem thêm</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 h-50">
+                <h2>ƯU ĐÃI</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, possimus.</p>
+                <a href="#" class="button-now">Mua Ngay</a>
+            </div>
+            <div class="col-md-6 h-50">
+                <img src="./image/sale.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
 
 
 
@@ -127,6 +175,24 @@
     <script src="./Bootstrap/jquery.min.js"></script>
     <script src="./Bootstrap/popper.min.js"></script>
     <script src="./Bootstrap/bootstrap.min.js"></script>
+
+    <!-- menu fixed -->
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        var colorMenu = document.getElementById("color-menu");
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>

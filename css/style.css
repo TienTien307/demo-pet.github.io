@@ -50,6 +50,10 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
+.header-logo .socials a:hover {
+    color: #F6AC4D;
+}
+
 .header-logo ul li:first-child {
     padding-top: 30px;
 }
@@ -91,9 +95,18 @@
 }
 
 .header-menu .grid ul li a {
-    color: white;
+    /* color: white; */
     font-weight: 600;
     font-size: 17px;
+}
+
+.color-menu {
+    color: white;
+}
+
+.header-menu .grid ul li a:hover {
+    color: black;
+    transition: .3s all;
 }
 
 .menu-con {
@@ -102,10 +115,11 @@
     visibility: hidden;
     opacity: 0;
     transition: .3s all;
-    background: #D9A85D;
+    background: #F6AC4D;
     top: 70px;
     left: -50px;
     width: 150%;
+    z-index: 50;
 }
 
 .menu-con li {
@@ -160,7 +174,34 @@
 }
 
 .button-now:hover {
-    background: rgb(61, 61, 61);
+    background: black;
     color: white;
     transition: .5s all;
+}
+
+
+/* content */
+
+.row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row .h-50 {
+    height: 60%;
+}
+
+
+/* menu fixed */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    color: black;
+    z-index: 10;
+    transition: .4s all;
+    z-index: 1000;
 }
