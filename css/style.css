@@ -339,3 +339,7 @@
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.item1:hover {
+    transform: scale(0.05);
+}
