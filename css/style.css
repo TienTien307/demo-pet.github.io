@@ -148,7 +148,7 @@
     color: black;
 }
 
-.carousel-caption h5 {
+.carousel-caption h2 {
     font-family: 'Kalam', cursive;
     font-size: 45px;
 }
@@ -212,7 +212,16 @@
 }
 
 
-/* codetest */
+/* danh mục */
+
+.content {
+    font-weight: bold;
+    width: 170px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding: 5px 0;
+    border-bottom: 4px solid #F6AC4D;
+}
 
 .select-item {
     display: flex;
@@ -224,7 +233,6 @@
 
 .select-item:hover {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    /* background: #F6AC4D; */
 }
 
 .select-item:hover .item-info h3 {
@@ -271,11 +279,32 @@
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.content {
+
+/* about us */
+
+.about-us h2 {
     font-weight: bold;
-    width: 150px;
-    margin-bottom: 30px;
+    width: 440px;
+    margin-bottom: 40px;
     margin-top: 50px;
     padding: 5px 0;
-    border-bottom: 3px solid #F6AC4D;
+    border-bottom: 4px solid #F6AC4D;
+}
+
+.about-us p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.about-us .choose-me span {
+    width: 50px;
+    font-size: 30px;
+    margin: 0px 20px;
+}
+
+.about-us .choose-me {
+    display: flex;
+    margin-bottom: 30px;
+    cursor: pointer;
 }
