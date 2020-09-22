@@ -293,17 +293,20 @@
     height: 100%;
     object-fit: cover;
     position: relative;
+<<<<<<< Updated upstream
     overflow: hidden;
     color: white;
+=======
+>>>>>>> Stashed changes
 }
 
 .item2 img {
     rotate: 180deg;
-    transition: .3s all;
 }
 
 .item2 {
     position: relative;
+<<<<<<< Updated upstream
     overflow: hidden;
     color: white;
 }
@@ -314,12 +317,17 @@
     height: 200px;
     margin: 25px 0px 25px 90px;
     border-radius: 50%;
+=======
+}
+
+.item3 img {
+    width: 50%;
+>>>>>>> Stashed changes
 }
 
 .item3 {
     background: #a677c9;
     position: relative;
-    overflow: hidden;
 }
 
 .info {
@@ -351,6 +359,7 @@
     text-transform: uppercase;
 }
 
+<<<<<<< Updated upstream
 .item1 img:hover,
 .item2 img:hover,
 .item3 img:hover {
@@ -463,4 +472,8 @@ footer .btn-send {
     background: black;
     border: none;
     color: white;
+=======
+.item1:hover {
+    transform: scale(0.05);
+>>>>>>> Stashed changes
 }
