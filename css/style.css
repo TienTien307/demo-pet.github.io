@@ -435,6 +435,10 @@ footer p {
     margin: 20px;
 }
 
+.footer4 h3 {
+    text-align: unset;
+}
+
 .footer-bottom {
     width: 100%;
     background: #333;
