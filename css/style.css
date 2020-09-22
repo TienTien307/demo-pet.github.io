@@ -294,6 +294,7 @@
     object-fit: cover;
     position: relative;
     overflow: hidden;
+    color: white;
 }
 
 .item2 img {
@@ -304,15 +305,19 @@
 .item2 {
     position: relative;
     overflow: hidden;
+    color: white;
 }
 
 .item3 img {
-    width: 50%;
+    width: 200px;
     transition: .3s all;
+    height: 200px;
+    margin: 25px 0px 25px 90px;
+    border-radius: 50%;
 }
 
 .item3 {
-    background: #D2C7E9;
+    background: #a677c9;
     position: relative;
     overflow: hidden;
 }
@@ -338,6 +343,7 @@
     width: 50%;
     right: 0;
     font-size: 18px;
+    color: white;
 }
 
 .info h3 {
