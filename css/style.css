@@ -293,23 +293,28 @@
     height: 100%;
     object-fit: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .item2 img {
     rotate: 180deg;
+    transition: .3s all;
 }
 
 .item2 {
     position: relative;
+    overflow: hidden;
 }
 
 .item3 img {
     width: 50%;
+    transition: .3s all;
 }
 
 .item3 {
     background: #D2C7E9;
     position: relative;
+    overflow: hidden;
 }
 
 .info {
@@ -340,6 +345,9 @@
     text-transform: uppercase;
 }
 
-.item1:hover {
-    transform: scale(0.05);
+.item1 img:hover,
+.item2 img:hover,
+.item3 img:hover {
+    transform: scale(1.05);
+    transition: .3s all;
 }
