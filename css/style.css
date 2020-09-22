@@ -315,9 +315,10 @@
     border-radius: 50%;
 }
 
-.item3 img {
+
+/* .item3 img {
     width: 50%;
-}
+} */
 
 .item3 {
     background: #a677c9;
@@ -360,10 +361,6 @@
     transition: .3s all;
 }
 
-.item1:hover {
-    transform: scale(1.05);
-}
-
 
 /* counter */
 
@@ -383,18 +380,20 @@
 }
 
 #shiva {
+    width: 220px;
     float: left;
     margin: 5px;
+    text-align: center;
 }
 
-#shiva .title {
-    margin-top: 0;
+#shiva p {
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .count {
     line-height: 100px;
     color: #F6AC4D;
-    margin-left: 50px;
     font-size: 55px;
     font-weight: 600;
 }
