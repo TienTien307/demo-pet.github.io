@@ -364,6 +364,10 @@
 
 /* counter */
 
+.counter {
+    padding: 50px 0px 100px 0px;
+}
+
 .counter-info {
     padding-top: 80px;
     font-size: 20px;
@@ -380,7 +384,7 @@
 }
 
 #shiva {
-    width: 220px;
+    width: 200px;
     float: left;
     margin: 5px;
     text-align: center;
@@ -394,7 +398,7 @@
 .count {
     line-height: 100px;
     color: #F6AC4D;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 600;
 }
 
@@ -459,10 +463,6 @@ footer .text-input {
     margin-bottom: 3px;
     padding: 3px;
     color: white;
-}
-
-footer a:hover {
-    border: 1px solid rgb(247, 103, 103);
 }
 
 footer .btn-send {
