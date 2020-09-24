@@ -157,7 +157,7 @@ img {
     padding: 50px 0px;
 }
 
-.booking h2 {
+.title {
     text-align: center;
     text-transform: uppercase;
     color: #F6AC4D;
@@ -183,12 +183,71 @@ img {
 
 /* service */
 
-.service {
-    margin: 50px 0px;
+.col-md-4 {
+    height: 100% !important;
 }
 
-.col-md-4 {
-    margin: 30px 0px;
+.service-item img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.service-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 50px 0px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+    padding: 10px 0px;
+    text-align: center;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.service-price .text {
+    font-size: 17px;
+    padding-bottom: 50px;
+}
+
+.service-price .text .a {
+    font-weight: 600;
+}
+
+.service-price .text span {
+    font-weight: 600;
+}
+
+
+/* price */
+
+blockquote {
+    position: relative;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0px 25px;
+    border-left: 2px solid #F6AC4D;
+    font-style: italic;
+    color: #333;
+}
+
+
+/* table */
+
+.table th {
+    text-align: center;
+}
+
+.table td {
+    border: 1px solid#ccc;
+}
+
+.table .center {
+    text-align: center;
 }
 
 
