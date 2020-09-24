@@ -425,6 +425,10 @@ footer p {
     text-align: center;
 }
 
+.footer1 span {
+    font-weight: 600;
+}
+
 .footer2 li {
     cursor: pointer;
 }
